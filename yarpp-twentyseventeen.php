@@ -2,11 +2,12 @@
 
 /*
   Plugin Name: YARPP Twentyseventeen Theme
-  Plugin URI: http://www.marc.tv/marctv-wordpress-plugins/
-  Description: YARPP related list for twentyseventeen
-  Version: 4.7.3
+  Plugin URI: http://marc.tv/marctv-wordpress-plugins/
+  Description: YARPP related list for twentyseventeen with lazy load.
+  GitHub Plugin URI: mtoensing/yarpp-twentyseventeen
+  Version: 1.0
   Author: MarcDK
-  Author URI: http://www.marc.tv
+  Author URI: https://marc.tv
   License: GPL2
  */
 
@@ -21,7 +22,7 @@ function yarpp_twentyseventeen_scripts()
 
 	wp_enqueue_script(
 		'jquery.yarpp-init',
-		WP_PLUGIN_URL . "/yarpp-twentyseventeen/jquery.yarpp-init.js", array("jquery","jquery.unveil"),
+		WP_PLUGIN_URL . "/yarpp-twentyseventeen/jquery.unveil-init.js", array("jquery","jquery.unveil"),
 		1.0,
 		true);
 
@@ -35,7 +36,6 @@ function yarpp_twentyseventeen_scripts()
 
 
 }
-
 
 if (!is_admin()) {
 	add_action('wp_enqueue_scripts', 'yarpp_twentyseventeen_scripts');
