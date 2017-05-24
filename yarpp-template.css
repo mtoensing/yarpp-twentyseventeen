@@ -40,6 +40,7 @@
     font-weight: bold;
 }
 
+
 /* Related posts items (wrapping items) */
 
 #jp-relatedposts .jp-relatedposts-items {
@@ -51,6 +52,10 @@
 }
 
 /* Related posts item */
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:last-child {
+    display: none;
+}
 
 #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
     float: left;
@@ -111,6 +116,7 @@
 #jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
     text-transform: none;
     margin: 0;
+    padding: 0;
     font-family: inherit;
     display: block;
     max-width: 100%;
@@ -188,6 +194,12 @@
  */
 
 @media only screen and (max-width: 640px) {
+
+
+    #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:last-child {
+        display: inline;
+        clear: none;
+    }
 
     #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
         width: 50%;
