@@ -195,8 +195,7 @@
 
 @media only screen and (max-width: 640px) {
 
-
-    #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:last-child {
+    html #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:last-child {
         display: inline;
         clear: none;
     }
