@@ -53,7 +53,7 @@
 
 /* Related posts item */
 
-#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:last-child {
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post3 {
     display: none;
 }
 
@@ -195,7 +195,7 @@
 
 @media only screen and (max-width: 640px) {
 
-    html #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post:last-child {
+    html #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post.jp-relatedposts-post3 {
         display: inline;
         clear: none;
     }
