@@ -4,7 +4,7 @@
   Plugin URI: http://marc.tv/marctv-wordpress-plugins/
   Description: YARPP related list for twentyseventeen with lazy load.
   GitHub Plugin URI: mtoensing/yarpp-twentyseventeen
-  Version: 1.5
+  Version: 1.6
   Author: MarcDK
   Author URI: https://marc.tv
   License: GPL2
@@ -15,7 +15,7 @@ function yarpp_twentyseventeen_scripts() {
 	wp_enqueue_script(
 		'jquery.unveil',
 		WP_PLUGIN_URL . "/yarpp-twentyseventeen/jquery.unveil.js", array( "jquery" ),
-		1.0,
+		1.5,
 		true );
 
 	wp_enqueue_script(
@@ -23,7 +23,7 @@ function yarpp_twentyseventeen_scripts() {
 
 
 	wp_enqueue_style(
-		"yarpp-template-thumbnails",WP_PLUGIN_URL . "/yarpp-twentyseventeen/yarpp-template.css",false,1.3 );
+		"yarpp-template-thumbnails",WP_PLUGIN_URL . "/yarpp-twentyseventeen/yarpp-template.css",false,1.5 );
 
 }
 
