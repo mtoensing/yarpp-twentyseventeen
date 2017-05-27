@@ -1,5 +1,5 @@
 (function ($) {
     $(document).ready(function ($) {
-       $(".unveil").unveil(400);
+       $(".unveil").unveil(500);
     });
 })(jQuery);
